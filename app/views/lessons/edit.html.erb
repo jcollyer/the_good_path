@@ -2,8 +2,8 @@
 <style>
 *{margin:0px;}
 body {
-  background: #0ca7d3;
-  color: #333;
+  background: #2C3E50;
+  color: #fff;
   font-family: "junction", sans-serif;
   font-size: 110%;
 }
@@ -31,7 +31,7 @@ a {
 
 .button:hover {
   background: #eee;
-  color: #0ca7d3;
+  color: #2C3E50;
 }
 
 
@@ -110,7 +110,7 @@ a {
 
 <div class="container">
   <div class="form_box">
-    <h1>Edit Lesson</h1>
+    <h1>Edit Podcast</h1>
 
         <%= form_for @lesson, :url => api_lesson_path(@lesson) do |form| %>
           <%= render "form", :form => form %>
