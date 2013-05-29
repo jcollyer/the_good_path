@@ -1,0 +1,11 @@
+<h1>Nate's Blog</h1>
+<div class="view_bar">
+  <div class="vew_bar_right">
+    {{#linkTo "posts.new" class="button create_button" }}+ New post{{/linkTo}}
+  </div>
+</div>
+{{#each model}}
+  {{partial "posts/list"}}
+{{/each}}
+
+

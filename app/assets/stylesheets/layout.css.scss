@@ -1,0 +1,436 @@
+$font-body: 'junction', sans-serif;
+$font-heading: 'raleway', sans-serif;
+$font-style: 'Satisfy', cursive;
+$color-blue:#0ca7d3;
+body{
+  background:$color-blue;
+  font-size: 110%;
+}
+
+.row {
+  width:100%;
+  margin:0px auto;
+  .columns{
+    padding:5px;
+  }
+}
+.row .row {
+  width:100%;
+}
+p{
+  color:#eee;
+  font-family:$font-heading;
+  line-height: 1.5em;
+  padding:3px 0px;
+}
+
+h1{
+  font-family:"raleway", Georgia, serif;
+  font-weight:400;
+  color:white;
+  margin:5px;
+}
+
+h2{
+  font-family:$font-heading;
+  font-weight:400;
+  letter-spacing:-1px;
+  margin:5px;
+}
+
+h3{
+  font-family:$font-heading;
+  margin:0px;
+}
+
+
+a{
+  color:#444;
+  text-decoration: none;
+}
+
+.hh1{
+  color:#eee;
+  font-family:"raleway", Georgia, serif;
+  font-size:170%;
+  margin:0px;
+}
+
+.hh2{
+  color:#eee;
+  font-family:"raleway", Georgia, serif;
+  font-size:130%;
+  margin:0px;
+}
+
+.hh3{
+  color:#eee;
+  font-family:"raleway", Georgia, serif;
+  font-size:220%;
+  margin:0 0 30px 0;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: ".";
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+a.button,
+.button {
+  border: 1px solid #eee;
+  color:#eee;
+  font-size: 70%;
+  padding:15px;
+  &:hover{
+    background:#eee;
+    color:$color-blue;
+  }
+}
+
+.float_right{
+  float:right;
+}
+
+.image{
+  margin:2px;
+  padding:2px;
+  position:relative;
+  z-index: 9;
+}
+
+.skew{
+  position:relative;
+  &:before{
+    border-left: 5px solid #fff;
+    border-top: 5px solid #fff;
+    border-radius: 16px;
+    content:"";
+    height: 342px;
+    bottom:0px;
+    position:absolute;
+    width:100%;
+    transform: skew(-5deg,-5deg);
+    -ms-transform: skew(-5deg,-5deg);
+    -webkit-transform: skew(-5deg,-5deg);
+  }
+  &:after{
+    border-bottom: 5px solid #fff;
+    border-right:  5px solid #fff;
+    border-radius: 16px;
+    content:"";
+    height: 342px;
+    left:2px;
+    bottom:0px;
+    position:absolute;
+    width:100%;
+    transform: skew(-5deg,-5deg);
+    -ms-transform: skew(-5deg,-5deg);
+    -webkit-transform: skew(-5deg,-5deg);
+    z-index:99;
+  }
+}
+.container {
+  padding:20px 0 0 0;
+  h1{
+    margin:20px auto;
+    text-align:center;
+  }
+}
+
+.page_header{
+  .page_header_info_one{
+    padding:85px 0 0 10%;
+  }
+  .page_header_info_two{
+
+  }
+}
+
+.view_bar{
+  height:60px;
+  padding:0px 80px;
+  width:100%;
+  .vew_bar_right{
+    float:right;
+    margin:10px;
+  }
+}
+
+.create_button{
+
+}
+
+
+.form_box{
+  margin:20px auto;
+  min-height:400px;
+  width:360px;
+  h1{margin:30px auto;}
+  form{
+    float:left;
+    div{
+      float:left;
+      margin:2px;
+      label{
+        color:#eeeeee;
+        float:left;
+        min-width:100px;
+        padding:10px 5px 0 0;
+        text-align:right;
+      }
+      input[type="file"]{
+        color:#444;
+        font-size: 18px;
+        line-height:1em;
+        margin:10px 0 0 0;
+        width:220px;
+      }
+      input[type="text"]{
+        border:none;
+        color:#555;
+        float:left;
+        font-size:18px;
+        height:40px;
+        min-width:250px;
+        padding:5px;
+        ::-webkit-input-placeholder{
+        }
+      }
+    }
+  }
+}
+#context_textfield{
+  border:none;
+  margin:0 0 0 2px;
+  width:250px;
+}
+
+.home_lessons_link{
+  border:1px solid #eee;
+  color:#eee;
+  font-family:"raleway", Georgia, serif;
+  padding:20px 80px;
+  &:hover{
+    background:#eee;
+    color:#222;
+  }
+}
+.home_page_lessons{
+
+}
+
+.the_top_nav{
+  min-width: 100%;
+  .calvary_link{
+      margin:17px 0 0 0px;
+    a{
+      color:white;
+      padding:0px 0 0 30px;
+    }
+    text-align: left;
+  }
+  .nav_slice{
+    background:#222;
+    border-top:1px solid #333;
+    font-family:"raleway", Georgia, serif;
+    font-size:80%;
+    height:47px;
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    text-align:center;
+    .nav_piece{
+      border-left:1px solid #333;
+      float:left;
+      .active{
+        background:#444;
+      }
+      a{
+        color:#eee;
+        display:block;
+        padding:16px 0;
+        &:hover{
+          background:#2f2f2f;
+        }
+      }
+    }
+  }
+}
+
+.section {
+  padding:0px 20px;
+  max-width:1040px;
+  margin:0 auto 100px;
+  min-height: 300px;
+  width:80%
+}
+
+.page_quote{
+  display:none;
+  font-family: $font-heading;
+  height:180px;
+  left:20px;
+  position:absolute;
+  text-align: center;
+  top:-220px;
+  width:360px;
+  .sun_css{
+    background: #fbf62a;
+    border-radius: 150px;
+    bottom:-54px;
+    height:200px;
+    left:-80px;
+    position: absolute;
+    width:200px;
+    z-index: 8;
+  }
+  .path_css{
+    background:#333;
+    border-radius:100px;
+    bottom:0px;
+    height:70px;
+    position:absolute;
+    right:5px;
+    width:120px;
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(150deg);
+    &:before{
+      border-top: 270px solid #333;
+      border-left: 200px solid transparent;
+      content:"";
+      left:-140px;
+      height: 0;
+      position:absolute;
+      top:-200px;
+      width: 0;
+    }
+  }
+  .quote_container{
+    position: absolute;
+    z-index: 9;
+    h1{
+      color:#444;
+      font-size:140%;
+      font-weight: bold;
+      line-height: 1.1em;
+      text-transform: uppercase;
+    }
+    h2{
+      color:#444;
+      font-size:260%;
+      font-style: italic;
+      line-height: 0.9em;
+    }
+    h3{
+      color:#444;
+      font-size: 200%;
+      letter-spacing: 1px;
+      line-height: 1em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.footer{
+  margin:0;
+  width:100%;
+  padding:0px 0 0 0;
+  position: relative;
+  z-index:98;
+  .footer_content_container{
+    position:relative;
+    z-index:9;
+    .footer_content{
+      margin:0 0 0px 0;
+      .footer_content_header{
+        background: #fff;
+        padding:5px 5px 5px 3%;
+        h1 {color:#ccc;}
+      }
+      .footer_content_body{
+        background:#999;
+        max-width:100%;
+        text-align:center;
+        a{
+          color:#ccc;
+          display:block;
+          padding:10px;
+          &:hover{
+            background:#eee;
+          }
+        }
+        .footer_link{
+          border-left:1px solid #ccc;
+          padding:0px;
+        }
+        .footer_link:first-child{border:none;}
+        .footer_social{
+          color:white;
+          max-width:100%;
+          .footer_social_facebook{background:#3B5998;}
+          .footer_social_twitter{background:#4099FF;}
+          .footer_social_google{background:#d34836;}
+          .footer_social_box{
+            padding:60px 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .lesson_mod{
+    height:auto;
+    .lesson_mod_menu{
+      .lesson_mod_controls{
+        height:120px;
+        width:68%;
+      }
+      .lesson_mod_info{
+        width:90%;
+      }
+    }
+  }
+  .nav_container{
+    margin:100px 0 0 0;
+  }
+  .section{
+    width:97%;
+  }
+}
+
+
+
+.lesson_show_back{
+  background:url(/images/crying_out_to_god.jpg) right top no-repeat;
+  background-size:100%;
+  background-position:0 -100px;
+  -moz-filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height:100%;
+  width:100%;
+  position:absolute;
+  &:after{
+    content:"";
+    background:rgba(255,255,255,0.6);
+    height:100%;
+    left:0px;
+    top:0px;
+    width:100%;
+    position:absolute;
+  }
+}
+
+
+

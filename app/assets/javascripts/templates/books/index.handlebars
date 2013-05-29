@@ -1,0 +1,11 @@
+<h1>Nate's Books</h1>
+<div class="view_bar">
+  <div class="vew_bar_right">
+    {{#linkTo "books.new" class="button create_button" }}+ New book{{/linkTo}}
+  </div>
+</div>
+{{#each model}}
+  {{partial "books/list"}}
+{{/each}}
+
+

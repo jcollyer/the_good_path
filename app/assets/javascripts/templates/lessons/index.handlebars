@@ -1,0 +1,13 @@
+<h1>Nate's Lesson Catalog</h1>
+<div class="row" id="lessons">
+  {{#each model}}
+    {{partial "lessons/list"}}
+  {{/each}}
+
+</div>
+<div class="view_bar">
+	<div class="vew_bar_right">
+		{{! {{#linkTo "lessons.new" class="button create_button" }}    {{!  + New Lesson{{/linkTo}}
+    <a href="lessons/new" class="button">+ New Lesson</a>
+	</div>
+</div>

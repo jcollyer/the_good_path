@@ -1,0 +1,20 @@
+<div class="row" id="books">
+  <div class="books_list small-12 large-6 columns">
+    {{#linkTo "books.show" this}}
+      <h2>{{title}}</h2>
+      <h2 class="books_summary">
+        {{summary}}
+      </h2>
+    {{/linkTo}}
+      <p>{{date}}<p>
+  </div>
+  <div class="books_list small-12 large-6 columns">
+    <span class="border">
+      <img {{bindAttr src="imageMediumUrl"}} class="float_right image" />
+    </span>
+  </div>
+  <div class="books_list small-12 columns">
+    <p>{{context}}</p>
+  </div>
+
+</div>

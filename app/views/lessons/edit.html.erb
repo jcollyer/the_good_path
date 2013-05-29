@@ -1,0 +1,121 @@
+
+<style>
+*{margin:0px;}
+body {
+  background: #0ca7d3;
+  color: #333;
+  font-family: "junction", sans-serif;
+  font-size: 110%;
+}
+
+a {
+  font-size: 70%;
+  text-decoration: none;
+}
+
+.row {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.row .columns {
+  padding: 5px;
+}
+
+.button {
+  background: none;
+  border: 1px solid #eee;
+  color: #eee;
+  padding: 15px;
+}
+
+.button:hover {
+  background: #eee;
+  color: #0ca7d3;
+}
+
+
+.container {
+  padding: 20px 0 0 0;
+}
+
+.container h1 {
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+.page_header .page_header_info_one {
+  padding: 85px 0 0 0;
+}
+
+
+.view_bar {
+  height: 60px;
+  width: 100%;
+}
+
+.view_bar .vew_bar_right {
+  float: right;
+  margin: 10px;
+}
+
+
+.form_box {
+  margin: 20px auto;
+  min-height: 560px;
+  width: 410px;
+}
+
+.form_box h1 {
+  margin: 30px auto;
+}
+
+.form_box div {
+  float: left;
+  margin: 2px;
+  line-height: 1.5em;
+}
+
+.form_box div label {
+  color: #eeeeee;
+  float: left;
+  min-width: 100px;
+  padding: 10px 5px 0 0;
+  text-align: right;
+}
+
+.form_box div input[type="file"],
+.form_box div input[type="text"] {
+  border: none;
+  float: left;
+  height: 40px;
+  min-width: 200px;
+}
+
+.form_box div input[type="file"] ::-webkit-input-placeholder,
+.form_box div input[type="text"] ::-webkit-input-placeholder {
+  color: #444;
+  font-size: 140%;
+}
+
+.edit_header{
+  background: #222;
+  height:40px;
+  width:100%;
+}
+
+</style>
+<div class="edit_header">&nbsp;</div>
+
+<div class="container">
+  <div class="form_box">
+    <h1>Edit Lesson</h1>
+
+        <%= form_for @lesson, :url => api_lesson_path(@lesson) do |form| %>
+          <%= render "form", :form => form %>
+        <% end %>
+
+  </div>
+</div>
+

@@ -1,0 +1,12 @@
+development:
+  bucket: nateslessons
+  access_key_id: AKIAJYO6ALTV3O5SMVXA
+  secret_access_key: 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
+test:
+  bucket: nateslessons
+  access_key_id: AKIAJYO6ALTV3O5SMVXA
+  secret_access_key: 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
+production:
+  bucket: nateslessons
+  access_key_id: AKIAJYO6ALTV3O5SMVXA
+  secret_access_key: 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

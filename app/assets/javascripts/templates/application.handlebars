@@ -1,0 +1,67 @@
+<div class="row the_top_nav">
+  <div class="small-12 large-4 columns nav_slice">
+    <div class="calvary_link"><a href="http://www.calvary.com">Calvary.com</a></div>
+  </div>
+  <div class="small-12 large-4 columns nav_slice">
+    <div class="row">
+      <div class="small-4 colums nav_piece">{{#linkTo "home"}}home{{/linkTo}}</div>
+      <div class="small-4 colums nav_piece">{{#linkTo "lessons.index"}}teaching{{/linkTo}}</div>
+      <div class="small-4 colums nav_piece">{{#linkTo "about"}}about{{/linkTo}}</div>
+    </div>
+  </div>
+  <div class="small-12 large-4 columns nav_slice">
+    <div class="row">
+      <div class="small-4 colums nav_piece">{{#linkTo "books.index"}}reading{{/linkTo}}</div>
+      <div class="small-4 colums nav_piece">{{#linkTo "videos.index"}}video{{/linkTo}}</div>
+      <div class="small-4 colums nav_piece">{{#linkTo "posts.index"}}blog{{/linkTo}}</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  {{outlet}}
+</div>
+
+<div class="footer">
+  <div class="footer_content_container">
+    <div class="footer_content">
+      <div class="footer_content_header"><h1>Connect with Nate</h1></div>
+      <div class="footer_content_body">
+        <div class="footer_social row">
+          <div class="small-12 large-4 columns footer_social_box footer_social_facebook">facebook</div>
+          <div class="small-12 large-4 columns footer_social_box footer_social_twitter">twitter</div>
+          <div class="small-12 large-4 columns footer_social_box footer_social_google">google +</div>
+        </div>
+      </div>
+    </div>
+   {{!  <div class="footer_content">
+      <div class="footer_content_header"><h1>contact Nate</h1></div>
+      <div class="footer_content_body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan, tellus ut malesuada hendrerit, elit nisi faucibus lacus, aliquam suscipit leo mauris id ligula. Aliquam fringilla elit in dolor suscipit eget feugiat metus viverra. Vivamus a mi risus, a bibendum nulla. Praesent et eros nunc, nec mattis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi aliquet sodales magna
+      </div>
+    </div> }}
+    <div class="footer_content">
+  {{!     <div class="footer_content_header"><h1>Go to...</h1></div> }}
+      <div class="footer_content_body row">
+        <div class="footer_link small-6 large-2 columns">{{#linkTo "home"}}home{{/linkTo}}</div>
+        <div class="footer_link small-6 large-2 columns">{{#linkTo "lessons.index"}}teaching{{/linkTo}}</div>
+        <div class="footer_link small-6 large-2 columns">{{#linkTo "about"}}about{{/linkTo}}</div>
+        <div class="footer_link small-6 large-2 columns">{{#linkTo "books.index"}}reading{{/linkTo}}</div>
+        <div class="footer_link small-6 large-2 columns">{{#linkTo "videos.index"}}video{{/linkTo}}</div>
+        <div class="footer_link small-6 large-2 columns">{{#linkTo "posts.index"}}blog{{/linkTo}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="page_quote">
+    <div class="quote_container">
+      <h1>Your <span style="font-size:160%;">Word</span></h1>
+      <h2><span style="font-size:70%;">is a</span> lamp to</h2>
+      <h2>my feet <span style="font-size:70%;">and a</h2>
+      <h3><span style="color:white;">light</span> to my <span style="color:white;">path</span></h3>
+    </div>
+    <div class="sun_css">&nbsp;</div>
+    <div class="path_css">&nbsp;</div>
+  </div>
+</div>
+
+ {{template "player"}}

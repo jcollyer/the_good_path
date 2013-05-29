@@ -1,0 +1,7 @@
+Rails Ember.js app
+==================
+
+  clone
+  cd App into folder
+  > rails s
+  localhost:3000

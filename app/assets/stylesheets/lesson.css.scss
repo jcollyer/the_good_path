@@ -1,0 +1,25 @@
+
+.lesson_wrapper {
+  height:400px;
+  position:relative;
+  width:400px;
+
+  &:hover > .play_mark_large {
+    opacity:0.8;
+  }
+
+  &:hover > .lesson_image {
+   // box-shadow: 0 0 5px #333;
+  }
+}
+
+.lesson_image {
+  height:400px;
+  width:400px;
+}
+
+.lesson_container{
+  min-height:400px;
+}
+
+

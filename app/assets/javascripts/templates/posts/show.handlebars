@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="post_info small-12 columns">
+    <h1>{{title}}</h1>
+    <p class="text_date">{{date}}</p>
+    <h2>{{summary}}</h2>
+    <img class="post_image" {{bindAttr src="imageLargeUrl"}}>
+    <p class="text_context">{{context}}</p>
+  </div>
+</div>
+<div class="view_bar">
+  <div class="vew_bar_right">
+    {{#linkTo "posts.edit" content class="button"}}Edit{{/linkTo}}
+    {{#linkTo "posts" class="button"}}Back{{/linkTo}}
+  </div>
+</div>
