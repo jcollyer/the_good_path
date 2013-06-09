@@ -2,6 +2,7 @@ $font-body: 'junction', sans-serif;
 $font-heading: 'raleway', sans-serif;
 $font-style: 'Satisfy', cursive;
 $color-blue:#2C3E50;
+$color-dark-blue:#025e79;
 body{
   background:$color-blue;
   font-size: 110%;
@@ -86,16 +87,33 @@ a{
 }
 
 .clearfix:after {
-  display: block;
-  clear: both;
-  content: ".";
-  height: 0;
-  line-height: 0;
-  visibility: hidden;
-}
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
 
-.clearfix {
-  display: inline-block;
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
+#user_nav{
+  font-family:$font-heading;
+  left:130px;
+  top:18px;
+  z-index: 99;
+
+}
+.loggedin{
+  background:$color-dark-blue;
+  padding:10px 25px;
+  p{
+    float:left;
+    margin:10px 0 0 0px;
+  }
 }
 
 a.button,
@@ -198,10 +216,6 @@ a.button,
   }
 }
 
-.create_button{
-
-}
-
 .accordian{
   width:300px;
   border:1px solid #ddd;
@@ -260,7 +274,9 @@ a.button,
         margin:10px 0 0 0;
         width:220px;
       }
-      input[type="text"]{
+     input[type="text"],
+     input[type="password"],
+     input[type="email"]{
         border:none;
         color:#555;
         float:left;

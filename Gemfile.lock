@@ -39,6 +39,7 @@ GEM
       ember-source
       execjs
       handlebars-source
+    bcrypt-ruby (3.0.1)
     builder (3.0.4)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -197,6 +198,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk
+  bcrypt-ruby
   coffee-rails (~> 3.2.1)
   ember-rails
   guard-livereload

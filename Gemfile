@@ -9,6 +9,7 @@ gem "momentjs-rails"
 gem "showdown-rails"
 gem "paperclip"
 gem "aws-sdk"
+gem "bcrypt-ruby", :require => "bcrypt"
 
 group :assets do
   gem "sass-rails",   "~> 3.2.3"
