@@ -10,6 +10,8 @@ gem "showdown-rails"
 gem "paperclip"
 gem "aws-sdk"
 gem "bcrypt-ruby", :require => "bcrypt"
+gem "omniauth-twitter"
+gem 'dotenv-rails', :groups => [:development, :test]
 
 group :assets do
   gem "sass-rails",   "~> 3.2.3"

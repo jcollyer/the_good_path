@@ -1,27 +1,21 @@
 class User < ActiveRecord::Base
-  attr_accessible :email, :password, :password_confirmation
+  # Public: Twitter username.
+  # column :username
+  # Returns a String.
+  validates :username, :presence => true
 
-  attr_accessor :password
-  before_save :encrypt_password
+  # Public: Twitter uid.
+  # column :uid
+  # Returns a String.
+  validates :uid, :presence => true
 
-  validates_confirmation_of :password
-  validates_presence_of :password, :on => :create
-  validates_presence_of :email
-  validates_uniqueness_of :email
+  # Public: Twitter access token.
+  # column :token
+  # Returns a String.
+  validates :token, :presence => true
 
-  def self.authenticate(email, password)
-    user = find_by_email(email)
-    if user && user.password_hash == BCrypt::Engine.hash_secret(password, user.password_salt)
-      user
-    else
-      nil
-    end
-  end
-
-  def encrypt_password
-    if password.present?
-      self.password_salt = BCrypt::Engine.generate_salt
-      self.password_hash = BCrypt::Engine.hash_secret(password, password_salt)
-    end
-  end
+  # Public: Twitter access secret.
+  # column :secret
+  # Returns a String.
+  validates :secret, :presence => true
 end

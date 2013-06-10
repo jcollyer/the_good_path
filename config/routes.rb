@@ -8,6 +8,9 @@ App::Application.routes.draw do
   resources :users
   resources :sessions
 
+  get "/auth/twitter/callback" => "twitter#callback"
+  get "/signout" => "twitter#signout", :as => :signout
+
 # GET /api/lessons
 # GET /api/lessons/:id
 # POST /api/lessons/
