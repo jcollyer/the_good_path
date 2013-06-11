@@ -1,6 +1,5 @@
 App.Router.map ->
   @resource "home", path: '/'
-  @resource "about"
   @resource "posts", ->
     @route "new"
     @route "edit",
@@ -26,6 +25,18 @@ App.Router.map ->
       path: "/:lesson_id/edit"
     @route "show",
       path: "/:lesson_id"
+  @resource "happenings", ->
+    @route "new"
+    @route "edit",
+      path: "/:happening_id/edit"
+    @route "show",
+      path: "/:happening_id"
+  @resource "contacts", ->
+    @route "new"
+    @route "edit",
+      path: "/:contact_id/edit"
+    @route "show",
+      path: "/:contact_id"
 
 App.HomeRoute = Em.Route.extend
   model: ->

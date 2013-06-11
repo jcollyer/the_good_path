@@ -1,0 +1,28 @@
+<div class="view_bar">
+  <div class="vew_bar_right">
+    <a href='#' {{action cancel}} class='button'>Cancel</a>
+    <a href='#' {{action save}} class='button'>Create</a>
+  </div>
+</div>
+<div class="form_box">
+  <h1>Create New Contact</h1>
+  <form>
+    <div>
+      <label {{bindAttr for="titleField.elementId"}}>Title</label>
+      {{view Ember.TextField valueBinding='title' name='title' viewName='titleField'}}
+    </div>
+    <div>
+      <label {{bindAttr for='summaryField.elementId'}}>Summary</label>
+      {{view Ember.TextField valueBinding='summary' name='summary' viewName='summaryField'}}
+    </div>
+    <div>
+      <label {{bindAttr for='contextField.elementId'}}>Context</label>
+      {{view Ember.TextArea valueBinding='context' name='context' viewName='contextField' id='context_textfield' rows="15"}}
+    </div>
+    <div>
+       <label>Image</label>
+      {{view App.file fileBinding="post.image"}}
+    </div>
+  </form>
+</div>
+

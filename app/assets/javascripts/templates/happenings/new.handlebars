@@ -1,0 +1,27 @@
+<div class="form_box">
+  <h1>Create New Happening</h1>
+  <form>
+    <div>
+      <label {{bindAttr for="titleField.elementId"}}>Title</label>
+      {{view Ember.TextField valueBinding='title' name='title' viewName='titleField'}}
+    </div>
+    <div>
+      <label {{bindAttr for='summaryField.elementId'}}>Summary</label>
+      {{view Ember.TextField valueBinding='summary' name='summary' viewName='summaryField'}}
+    </div>
+    <div>
+      <label>Image</label>
+      <input id="lesson_image" name="lesson[image]"  type="file">
+     {{!  {{view App.file fileBinding="lesson.image_url" }}
+    </div>
+  </form>
+</div>
+
+<div class="view_bar">
+  <div class="vew_bar_right">
+    <a href='#' {{action cancel}} class='button'>Cancel</a>
+  </div>
+  <div class="vew_bar_right">
+    <a href='#' {{action save}} class='button'>Create</a>
+  </div>
+</div>

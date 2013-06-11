@@ -1,0 +1,30 @@
+<div class="view_bar">
+  <div class="vew_bar_right">
+    <a href='#' {{action cancel target='controller' }} class="button">Cancel</a>
+  </div>
+  <div class="vew_bar_right">
+    <a href='#' {{action 'destroy'}} class="button">Delete</a>
+  </div>
+  <div class="vew_bar_right">
+    <a href='#' {{action save}} class='button'>Update</a>
+  </div>
+</div>
+
+<div class="form_box">
+  <h1>Edit Post</h1>
+  <form>
+    <div>
+      <label {{bindAttr for="titleField.elementId"}}>Title</label>
+      {{view Ember.TextField valueBinding='title' name='title' viewName='titleField'}}
+    </div>
+    <div>
+      <label {{bindAttr for='summaryField.elementId'}}>Summary</label>
+      {{view Ember.TextField valueBinding='summary' name='summary' viewName='summaryField'}}
+    </div>
+    <div>
+      <label {{bindAttr for='contextField.elementId'}}>Context</label>
+      {{view Ember.TextArea valueBinding='context' name='context' viewName='contextField' id='context_textfield' rows="15"}}
+    </div>
+  </form>
+</div>
+

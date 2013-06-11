@@ -1,10 +1,11 @@
-$font-body: 'junction', sans-serif;
-$font-heading: 'raleway', sans-serif;
+$font-body: 'raleway', sans-serif;
+$font-heading: 'junction', sans-serif;
 $font-style: 'Satisfy', cursive;
 $color-blue:#2C3E50;
 $color-dark-blue:#025e79;
 body{
   background:$color-blue;
+  font-family:$font-body;
   font-size: 110%;
   color:#eee;
 }
@@ -22,7 +23,6 @@ body{
 }
 p{
   color:#eee;
-  font-family:$font-heading;
   line-height: 1.5em;
   padding:3px 0px;
 }
@@ -35,14 +35,13 @@ h1{
 }
 
 h2{
-  font-family:$font-heading;
   font-weight:400;
   letter-spacing:-1px;
   margin:5px;
 }
 
 h3{
-  font-family:$font-heading;
+  line-height: 1.7em;
   margin:0px;
 }
 
@@ -52,10 +51,16 @@ a{
   text-decoration: none;
 }
 
+ul{
+  li{
+     line-height: 1.7em;
+  }
+}
+
 .hh1{
   color:#eee;
   font-family:"raleway", Georgia, serif;
-  font-size:270%;
+  font-size:170%;
   margin:0px;
 }
 
@@ -101,7 +106,6 @@ a{
 
 
 #user_nav{
-  font-family:$font-heading;
   left:130px;
   top:18px;
   z-index: 99;
@@ -424,6 +428,15 @@ a.button,
       line-height: 1em;
       text-transform: uppercase;
     }
+  }
+}
+
+.about_section{
+  h2{
+    text-align: center;
+  }
+  h3{
+    text-align: center;
   }
 }
 

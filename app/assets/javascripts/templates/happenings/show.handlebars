@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="lesson_container large-6 small-12 columns">
+    <div class="lesson_wrapper">
+      <img class="lesson_image play_this_lesson_image" {{bindAttr src="imageLargeUrl"}}>
+      <div class="play_mark_large play_button paused">
+        <div class="play_this_lesson_mp3">{{mp3}}</div>
+        <div class="play_this_lesson_title" style="display:none">{{title}}</div>
+        <div class="play_this_lesson_summary" style="display:none">{{summary}}</div>
+        <div class="play_this_lesson_date" style="display:none">{{date}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="lesson_info large-6 small-12 columns">
+    <h2>{{title}}</h2>
+    <p>{{summary}}</p>
+    <p>{{date}}</p>
+    <p class="hidden_div" id="edit_button_id">{{id}}</p>
+  </div>
+</div>
+<div class="view_bar">
+  <div class="vew_bar_right">
+    {{#view App.EditLesson}}
+      <span class="button">Edit</span>
+    {{/view}}
+  </div>
+</div>
