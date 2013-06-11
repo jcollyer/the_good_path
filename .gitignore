@@ -17,3 +17,5 @@
 public/system
 .DS_Store
 *.sqlite3-journal
+
+.env
