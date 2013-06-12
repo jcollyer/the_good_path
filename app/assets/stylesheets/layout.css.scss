@@ -1,6 +1,6 @@
 $font-body: 'raleway', sans-serif;
 $font-heading: 'junction', sans-serif;
-$font-style: 'Satisfy', cursive;
+$font-style: 'leagueone', cursive;
 $color-blue:#2C3E50;
 $color-dark-blue:#025e79;
 body{
@@ -23,7 +23,7 @@ body{
 }
 p{
   color:#eee;
-  line-height: 1.5em;
+  line-height: 1.7em;
   padding:3px 0px;
 }
 
@@ -80,6 +80,7 @@ ul{
 
 .quote{
   font-family:$font-style;
+  font-size:80%;
 }
 
 .ref{

@@ -28,3 +28,13 @@
     url("Junction-webfont.otf") format("opentype"),
     url("Junction-webfont.svg#Junction-webfont") format("svg");
   }
+
+@font-face {
+  font-family: "leagueone";
+  src: url("LeagueScriptNumberOne-webfont.eot");
+  src: local("☺"),
+    url("LeagueScriptNumberOne-webfont.woff") format("woff"),
+    url("LeagueScriptNumberOne-webfont.otf") format("opentype"),
+    url("LeagueScriptNumberOne-webfont.svg#LeagueScriptNumberOne-webfont") format("svg");
+}
+
