@@ -2,7 +2,8 @@ $font-body: 'raleway', sans-serif;
 $font-heading: 'junction', sans-serif;
 $font-style: 'leagueone', cursive;
 $color-blue:#2C3E50;
-$color-dark-blue:#025e79;
+$color-dark-blue:#243545;
+$color-light-blue:#025e79;
 body{
   background:$color-blue;
   font-family:$font-body;
@@ -14,7 +15,7 @@ body{
   width:100%;
   margin:0px auto;
   .columns{
-    padding:5px;
+    padding:15px;
   }
 }
 .row .row {
@@ -53,7 +54,10 @@ a{
 
 ul{
   li{
-     line-height: 1.7em;
+    line-height: 1.7em;
+  }
+  ol{
+    line-height: 1.7em;
   }
 }
 
@@ -142,6 +146,10 @@ a.button,
   padding:2px;
   position:relative;
   z-index: 9;
+}
+
+.background_one{
+  background:$color-dark-blue;
 }
 
 .home_logo {
