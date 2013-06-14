@@ -4,6 +4,19 @@ $font-style: 'leagueone', cursive;
 $color-blue:#2C3E50;
 $color-dark-blue:#243545;
 $color-light-blue:#025e79;
+@mixin grad_one{
+background-color: #2c3e50;
+background-image: -webkit-gradient(linear, left top, right bottom, from(rgb(44, 62, 80)), to(rgb(72, 18, 17)));
+background-image: -webkit-linear-gradient(left top, rgb(44, 62, 80), rgb(72, 18, 17));
+background-image: -moz-linear-gradient(left top, rgb(44, 62, 80), rgb(72, 18, 17));
+background-image: -o-linear-gradient(left top, rgb(44, 62, 80), rgb(72, 18, 17));
+background-image: -ms-linear-gradient(left top, rgb(44, 62, 80), rgb(72, 18, 17));
+background-image: linear-gradient(left top, rgb(44, 62, 80), rgb(72, 18, 17));
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#2c3e50', EndColorStr='#481211');
+
+
+
+}
 body{
   background:$color-blue;
   font-family:$font-body;
@@ -111,10 +124,10 @@ ul{
 
 
 #user_nav{
-  left:130px;
-  top:18px;
-  z-index: 99;
-
+  @include grad_one;
+  height:60px;
+  padding:10px 0 0 0;
+  width:100%;
 }
 .loggedin{
   background:$color-dark-blue;
@@ -156,10 +169,10 @@ a.button,
   background: url('lo.png') no-repeat;
   background-size:100%;
   height: 370px;
-  left:1%;
+  right:-1%;
   opacity: 0.2;
   position:absolute;
-  top:40px;
+  top:100px;
   width:370px;
   transform:rotate(0deg);
   -ms-transform:rotate(0deg);
@@ -212,10 +225,12 @@ a.button,
 
 .page_header{
   .page_header_info_one{
-    padding:5px 0 0 10%;
+    margin:0px 0 0 0;
+    padding:5px 0 0 5%;
   }
   .page_header_info_two{
-
+    margin:100px 0 0 0;
+    text-align: center;
   }
 }
 
@@ -227,16 +242,26 @@ a.button,
     float:right;
     margin:10px;
   }
+  .view_bar_title{
+    float:left;
+    h1{
+      font-size: 280%;
+      margin:0px;
+      padding:0px 0 0 0;
+    }
+  }
 }
 
 .accordian{
-  width:300px;
+  margin:30px auto 40px;
   border:1px solid #ddd;
   .accordian_part{
     border-bottom:1px solid #ddd;
+    border-left:1px solid #ddd;
     padding:10px;
     h3{
-
+      font-size: 90%;
+      text-align: center;
     }
     &:hover{
       background:#eee;
@@ -245,11 +270,7 @@ a.button,
       cursor:pointer;
     }
   }
-  .accordian_part:last-child {border-bottom:none;}
-}
-
-.home_slug{
-  height:70px;
+  .accordian_part:last-child { border-right:none;}
 }
 
 .active_home_feature{
@@ -260,7 +281,7 @@ a.button,
   margin:0px 0px;
   .show_data{
     display:none;
-    padding:10px;
+    padding:0px 10px 10px 10px;
   }
 }
 .form_box{
